@@ -1,0 +1,23 @@
+.banner_img {
+  width: 100vw;
+  height: 300px;
+  object-fit: contain;
+  display: flex; /* Căn giữa nội dung */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  overflow: hidden; /* Đảm bảo hình ảnh không tràn ra ngoài phần tử */
+  user-select: none; /* Ngăn chặn việc chọn văn bản */
+  touch-action: pan-y; /* Cho phép cuộn theo chiều dọc trên màn hình cảm ứng */
+  transform-origin: 50% 50%; /* Đảm bảo gốc biến đổi ở giữa phần tử */
+}
+
+.carasousel {
+  margin-top: 10;
+}
+
+@media (max-width: 768px) {
+  .banner_img {
+    object-fit: cover;
+    height: 180px;
+  }
+}
